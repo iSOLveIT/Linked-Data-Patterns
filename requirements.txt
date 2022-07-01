@@ -1,0 +1,4 @@
+Sphinx
+sphinx-copybutton
+sphinx_design
+sphinx-immaterial==0.7.2
