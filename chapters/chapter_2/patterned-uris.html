@@ -13,7 +13,7 @@
     
     
       
-        <title>4. Patterned URIs - Linked Data Patterns</title>
+        <title>1.4. Patterned URIs - Linked Data Patterns</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#context" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4. Patterned URIs
+              1.4. Patterned URIs
             
           </span>
         </div>
@@ -319,9 +324,66 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span title="chapters/chapter_2/patterned-uris (document)" class="md-ellipsis">Patterned URIs</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="" class="md-nav__link md-nav__link--active">
         <span title="chapters/chapter_2/patterned-uris (document)" class="md-ellipsis">Patterned URIs</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_2/patterned-uris (document)" class="md-ellipsis">Patterned URIs</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -463,8 +525,53 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_2/patterned-uris (document)" class="md-ellipsis">Patterned URIs</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -481,27 +588,9 @@
 
 
 
-  <h1 id="patterned-uris"><span id="id1"></span><span class="section-number">4. </span>Patterned URIs<a class="headerlink" href="#patterned-uris" title="Permalink to this heading">¶</a></h1>
-<blockquote>
-<div><blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">name<span class="colon">:</span></dt>
-<dd class="field-odd"><p>patterned-uris</p>
-</dd>
-<dt class="field-even">class<span class="colon">:</span></dt>
-<dd class="field-even"><p>title</p>
-</dd>
-</dl>
-</div></blockquote>
+  <h1 id="patterned-uris"><span id="id1"></span><span class="section-number">1.4. </span>Patterned URIs<a class="headerlink" href="#patterned-uris" title="Permalink to this heading">¶</a></h1>
 <p><em>How can we create more predictable, human-readable URIs?</em></p>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="context">Context</p>
-</div>
-</div>
-</div>
+<h2 id="context"><span class="section-number">1.4.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>Clean, clear URIs can be easier to remember and easier for
 developers to work with. This is especially true if the URIs can
 be algorithmically constructed or follow a common pattern. This
@@ -509,86 +598,37 @@ allows URIs to be constructed or hacked in order to create new
 entry points into the dataset, e.g. determining the URI for a
 collection of similar resources based on knowledge of a single
 example URI.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="solution">Solution</p>
-</div>
-</div>
-</div>
+<h2 id="solution"><span class="section-number">1.4.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
 <p>Create URIs that follow a simple naming pattern. For applications
 generating Linked Data one technique for building patterned URIs
 is to use the pluralized class name as part of the URI pattern.</p>
 <p>For example if an application will be publishing data about book
 resources, which are modelled as the rdf:type ex:Book. One might
 construct URIs of the form:</p>
-<p><code class="docutils literal notranslate"><span class="pre">/books/12345</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">books</span><span class="o">/</span><span class="mi">12345</span>
+</code></pre></div>
+</div>
 <p>Where /books is the base part of the URI indicating “the
 collection of books”, and the 12345 is an identifier for an
 individual book.</p>
 <p>If multiple classes share a common base class, then it is also
 possible to use the name of the common base class, rather than
 generating separate URIs for each derived type</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="examples">Example(s)</p>
-</div>
-</div>
-</div>
+<h2 id="example-s"><span class="section-number">1.4.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
 <p>The BBC website uses /programmes to group together URIs that
 relate to series, brands and episodes, all of which are subclasses
 of the rdf:type po:Programme</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="discussion">Discussion</p>
-</div>
-</div>
-</div>
+<h2 id="discussion"><span class="section-number">1.4.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
 <p>There are clear benefits from having human-readable, hackable
 URIs. This solution achieves that by ensuring the same naming
 scheme that applies to the underlying data also applies to the
 URIs. This provides a clear relation between the URI and the type
 of thing that it describes.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="related">Related</p>
-</div>
-</div>
-</div>
-<div class="itemizedlist docutils container">
+<h2 id="related"><span class="section-number">1.4.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="hierarchical-uris.html">Hierarchical URIs</a></p></li>
-<li><p><a class="reference external" href="natural-keys.html">Natural Keys</a></p></li>
+<li><p><a class="reference internal" href="hierarchical-uris.html#hierarchical-uris"><span class="std std-ref">Hierarchical URIs</span></a></p></li>
+<li><p><a class="reference internal" href="natural-keys.html#natural-keys"><span class="std std-ref">Natural Keys</span></a></p></li>
 </ul>
-</div>
-</div>
-</div></blockquote>
-<div class="navfooter docutils container">
-<table class="docutils data align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="natural-keys.html">Prev</a></p></td>
-<td><p><a class="reference external" href="identifier-patterns.html">Up</a></p></td>
-<td><p> <a class="reference external" href="proxy-uris.html">Next</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Natural Keys</p></td>
-<td><p><a class="reference external" href="index-2.html">Ho
-me</a></p></td>
-<td><p>Proxy URIs</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 
 
 
@@ -609,7 +649,7 @@ me</a></p></td>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="natural-keys.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Natural Keys" rel="prev">
+        <a href="natural-keys.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.3. Natural Keys" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -618,20 +658,20 @@ me</a></p></td>
               <span class="md-footer__direction">
                 Previous
               </span>
-              3. Natural Keys
+              1.3. Natural Keys
             </div>
           </div>
         </a>
       
       
         
-        <a href="proxy-uris.html" class="md-footer__link md-footer__link--next" aria-label="Next: 5. Proxy URIs" rel="next">
+        <a href="proxy-uris.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1.5. Proxy URIs" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              5. Proxy URIs
+              1.5. Proxy URIs
             </div>
           </div>
           <div class="md-footer__button md-icon">

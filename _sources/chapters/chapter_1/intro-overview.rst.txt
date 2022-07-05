@@ -78,8 +78,8 @@ common theme.
 -  :ref:`Chapter 6, Application Patterns <chap6>`
 
 The catalogue also includes a few patterns that arguably aren't
-patterns at all, they're similar features of the RDF model; `Typed
-Literal <typed-literal.html>`__ for example. We decided to include
+patterns at all, they're similar features of the RDF model; :ref:`Typed Literal <typed-literal>`
+for example. We decided to include
 these for the sake of helping to document best practices. There
 are plenty of examples and material on some of these basic
 features but they're often overlooked by both experienced and new
