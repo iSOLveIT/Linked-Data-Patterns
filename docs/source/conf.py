@@ -57,7 +57,7 @@ html_theme = 'sphinx_immaterial'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_css_files = ["custom.css"]
-
+html_extra_path = ["download/linked-data-patterns.pdf", "download/linked-data-patterns.epub"]
 
 html_sidebars = {
     "**": ["about.html", "navigation.html", "searchbox.html"],
@@ -78,15 +78,7 @@ html_theme_options = {
     "edit_uri": "blob/main/docs/source/",
     "globaltoc_collapse": True,
     "features": [
-        # "navigation.expand",
-        # "navigation.tabs",
-        # "toc.integrate",
-        # "navigation.sections",
-        # "navigation.instant",
-        # "header.autohide",
         "navigation.top",
-        # "navigation.tracking",
-        # "search.highlight",
         "search.share",
     ],
     "palette": [

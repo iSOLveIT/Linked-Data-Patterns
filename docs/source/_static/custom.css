@@ -129,3 +129,7 @@ html .md-nav--primary .md-nav__title--site .md-nav__button {
 */
 
 /* End Custom Admonitions */
+
+h1#linked-data-patterns {
+	display: none;
+}
