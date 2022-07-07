@@ -3,140 +3,75 @@
 Repeated Property
 =================
 
-               :name: repeated-property
-               :class: title
+*How can properties that have multiple values be expressed?*
 
-   *How can properties that have multiple values be expressed?*
+Context
+#######
 
-   .. container:: sect2
+A resource may have multiple values for a specific property. E.g.
+a set of keywords associated with a research paper. RDF offers
+several options for modelling these multi-valued relations.
+Sometimes these multi-valued relations have an explicit ordering
+that should be preserved in the data, e.g. the order of authors.
+In other cases an explicit ordering is not required
 
-      .. container:: titlepage
+Solution
+########
 
-         .. container::
+Simply repeat the property of the resource multiple times.
 
-            .. container::
+Example(s)
+##########
 
-               .. rubric:: Context
-                  :name: context
-                  :class: title
+For example a research paper may have multiple keywords. The
+ordering of these keywords is not important, so using the Dublin
+Core subject property, we can express this multi-valued relation
+as:
 
-      A resource may have multiple values for a specific property. E.g.
-      a set of keywords associated with a research paper. RDF offers
-      several options for modelling these multi-valued relations.
-      Sometimes these multi-valued relations have an explicit ordering
-      that should be preserved in the data, e.g. the order of authors.
-      In other cases an explicit ordering is not required
+.. code-block::
 
-   .. container:: sect2
+   _:doc
+     dc:subject "RDF";
+     dc:subject "Semantic Web".
 
-      .. container:: titlepage
+Discussion
+##########
 
-         .. container::
+Repeating properties is the simplest approach to handling
+multi-valued relations. The alternatives all have their downsides.
+One alternative would be to use a structured value for the
+literal, e.g:
 
-            .. container::
+.. code-block::
 
-               .. rubric:: Solution
-                  :name: solution
-                  :class: title
+   _:doc dc:subject "RDF, Semantic Web".
 
-      Simply repeat the property of the resource multiple times.
+But structured values limit the ability for applications to query
+for specific data items, e.g. documents that have a specific
+keyword. With a structured value a regular expression would be
+required to test for the values in the literal.
 
-   .. container:: sect2
+Another alternative would have been to use an RDF Container
+(Sequence, Bag, or Alt) or Collection (RDF List). Some of these
+structures imply ordering (Sequence, List) while others (Bag, Alt)
+don't imply an ordering over their members. This means that the
+keywords could have been expressed as:
 
-      .. container:: titlepage
+.. code-block::
 
-         .. container::
+   _:doc dc:subject ( "RDF", "Semantic Web" )
 
-            .. container::
+There are several downsides to using Containers and Collections.
+Firstly they can be difficult to use as they can be hard to query.
+Secondly, when combining data from different sources the
+Containers and Collections won't be merged together to create a
+single structure; the lists will remain separate.
 
-               .. rubric:: Example(s)
-                  :name: examples
-                  :class: title
+On the whole, the simplest way to express multi-valued relations
+is to use a simple Repeated Property. Collections and Containers
+are best used only when ordering is significant.
 
-      For example a research paper may have multiple keywords. The
-      ordering of these keywords is not important, so using the Dublin
-      Core subject property, we can express this multi-valued relation
-      as:
+Related
+#######
 
-      .. code:: programlisting
-
-
-         _:doc 
-           dc:subject "RDF"; 
-           dc:subject "Semantic Web".
-
-   .. container:: sect2
-
-      .. container:: titlepage
-
-         .. container::
-
-            .. container::
-
-               .. rubric:: Discussion
-                  :name: discussion
-                  :class: title
-
-      Repeating properties is the simplest approach to handling
-      multi-valued relations. The alternatives all have their downsides.
-      One alternative would be to use a structured value for the
-      literal, e.g:
-
-      .. code:: programlisting
-
-
-         _:doc dc:subject "RDF, Semantic Web".
-
-      But structured values limit the ability for applications to query
-      for specific data items, e.g. documents that have a specific
-      keyword. With a structured value a regular expression would be
-      required to test for the values in the literal.
-
-      Another alternative would have been to use an RDF Container
-      (Sequence, Bag, or Alt) or Collection (RDF List). Some of these
-      structures imply ordering (Sequence, List) while others (Bag, Alt)
-      don't imply an ordering over their members. This means that the
-      keywords could have been expressed as:
-
-      .. code:: programlisting
-
-
-         _:doc dc:subject ( "RDF", "Semantic Web" )
-
-      There are several downsides to using Containers and Collections.
-      Firstly they can be difficult to use as they can be hard to query.
-      Secondly, when combining data from different sources the
-      Containers and Collections won't be merged together to create a
-      single structure; the lists will remain separate.
-
-      On the whole, the simplest way to express multi-valued relations
-      is to use a simple Repeated Property. Collections and Containers
-      are best used only when ordering is significant.
-
-   .. container:: sect2
-
-      .. container:: titlepage
-
-         .. container::
-
-            .. container::
-
-               .. rubric:: Related
-                  :name: related
-                  :class: title
-
-      .. container:: itemizedlist
-
-         -  `Ordered List <ordered-list.html>`__
-
-.. container:: navfooter
-
-   --------------
-
-   +----------------------+----------------------+----------------------+
-   | `Prev <reified       | `Up <modelli         |  `Next <top          |
-   | -statement.html>`__  | ng-patterns.html>`__ | ic-relation.html>`__ |
-   +----------------------+----------------------+----------------------+
-   | Reified Statement    | `Ho                  |  Topic Relation      |
-   |                      | me <index-2.html>`__ |                      |
-   +----------------------+----------------------+----------------------+
+- :ref:`Ordered List <ordered-list>`
