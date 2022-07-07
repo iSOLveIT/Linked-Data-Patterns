@@ -1,7 +1,7 @@
-.. _named-graph:
+.. _named-graphs:
 
-Named Graph
-===========
+Named Graphs
+============
 
                :name: named-graph
                :class: title
