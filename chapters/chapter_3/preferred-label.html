@@ -13,7 +13,7 @@
     
     
       
-        <title>2.9. Preferred Label - Linked Data Patterns</title>
+        <title>9. Preferred Label - Linked Data Patterns</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#context" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2.9. Preferred Label
+              9. Preferred Label
             
           </span>
         </div>
@@ -404,9 +409,59 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span title="chapters/chapter_3/preferred-label (document)" class="md-ellipsis">Preferred Label</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="" class="md-nav__link md-nav__link--active">
         <span title="chapters/chapter_3/preferred-label (document)" class="md-ellipsis">Preferred Label</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_3/preferred-label (document)" class="md-ellipsis">Preferred Label</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -547,8 +602,46 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_3/preferred-label (document)" class="md-ellipsis">Preferred Label</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -565,52 +658,17 @@
 
 
 
-  <h1 id="preferred-label"><span id="id1"></span><span class="section-number">2.9. </span>Preferred Label<a class="headerlink" href="#preferred-label" title="Permalink to this heading">¶</a></h1>
-<blockquote>
-<div><blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">name<span class="colon">:</span></dt>
-<dd class="field-odd"><p>preferred-label</p>
-</dd>
-<dt class="field-even">class<span class="colon">:</span></dt>
-<dd class="field-even"><p>title</p>
-</dd>
-</dl>
-</div></blockquote>
+  <h1 id="preferred-label"><span id="id1"></span><span class="section-number">9. </span>Preferred Label<a class="headerlink" href="#preferred-label" title="Permalink to this heading">¶</a></h1>
 <p><em>How can a simple unambiguous label be provided for a resource?</em></p>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="context">Context</p>
-</div>
-</div>
-</div>
+<h2 id="context"><span class="section-number">9.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>There are many different RDF properties that can be used for
 expressing a label, including generic properties such as
 rdfs:label and more domain specific labels such as foaf:name. This
 presents a variety of choices to the data provider, and can be
 confusing for application authors.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="solution">Solution</p>
-</div>
-</div>
-</div>
-<p>Use <code class="docutils literal notranslate"><span class="pre">skos:prefLabel</span></code> to publish the preferred display label for
-a resource</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="examples">Example(s)</p>
-</div>
-</div>
-</div>
+<h2 id="solution"><span class="section-number">9.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
+<p>Use <code class="docutils literal notranslate"><span class="pre">skos:prefLabel</span></code> to publish the preferred display label for a resource</p>
+<h2 id="example-s"><span class="section-number">9.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
 <p>A library system publishes Linked Data about authors. The
 preferred mechanism for specifying author names is using a
 normalized form, e.g Surname, First Name. This preferred label can
@@ -620,15 +678,7 @@ simple Linked Data browser may use the preferred label, whereas an
 Address Book application browsing the same data may choose to
 assemble display labels according to user defined preferences,
 e.g. First Name, Surname.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="discussion">Discussion</p>
-</div>
-</div>
-</div>
+<h2 id="discussion"><span class="section-number">9.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">skos:prefLabel</span></code> property, whilst defined in the SKOS
 ontology, is a general purpose property that identifies the
 preferred label for a resource. By standardising on this property
@@ -643,23 +693,6 @@ to express alternatives or variations in labels or naming. A
 client that is aware of the meaning of specific predicates may
 choose to build labels using alternate logic, but having a label
 unambiguously specified simplifies application development.</p>
-</div>
-</div></blockquote>
-<div class="navfooter docutils container">
-<table class="docutils data align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="ordering-relation.html">Prev</a></p></td>
-<td><p><a class="reference external" href="modelling-patterns.html">Up</a></p></td>
-<td><p> <a class="reference external" href="qualified-relation.html">Next</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Ordering Relation</p></td>
-<td><p><a class="reference external" href="index-2.html">Ho
-me</a></p></td>
-<td><p>Qualified Relation</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 
 
 
@@ -680,7 +713,7 @@ me</a></p></td>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="ordering-relation.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2.8. Ordering Relation" rel="prev">
+        <a href="ordering-relation.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 8. Ordering Relation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -689,20 +722,20 @@ me</a></p></td>
               <span class="md-footer__direction">
                 Previous
               </span>
-              2.8. Ordering Relation
+              8. Ordering Relation
             </div>
           </div>
         </a>
       
       
         
-        <a href="qualified-relation.html" class="md-footer__link md-footer__link--next" aria-label="Next: 2.10. Qualified Relation" rel="next">
+        <a href="qualified-relation.html" class="md-footer__link md-footer__link--next" aria-label="Next: 10. Qualified Relation" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              2.10. Qualified Relation
+              10. Qualified Relation
             </div>
           </div>
           <div class="md-footer__button md-icon">

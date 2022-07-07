@@ -13,7 +13,7 @@
     
     
       
-        <title>1.8. URL Slug - Linked Data Patterns</title>
+        <title>8. URL Slug - Linked Data Patterns</title>
       
     
     
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.8. URL Slug
+              8. URL Slug
             
           </span>
         </div>
@@ -602,14 +602,14 @@
 
 
 
-  <h1 id="url-slug"><span id="id1"></span><span class="section-number">1.8. </span>URL Slug<a class="headerlink" href="#url-slug" title="Permalink to this heading">¶</a></h1>
+  <h1 id="url-slug"><span id="id1"></span><span class="section-number">8. </span>URL Slug<a class="headerlink" href="#url-slug" title="Permalink to this heading">¶</a></h1>
 <p><em>How can we create URLs from arbitrary text or keywords?</em></p>
-<h2 id="context"><span class="section-number">1.8.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
+<h2 id="context"><span class="section-number">8.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>When generating a URI for an identifier we may not always have a
 simple numeric <a class="reference internal" href="natural-keys.html#natural-keys"><span class="std std-ref">Natural Key</span></a> for a resource.
 In some cases, e.g. for documents, keywords, categories, we may
 only have a title or name.</p>
-<h2 id="solution"><span class="section-number">1.8.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
+<h2 id="solution"><span class="section-number">8.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
 <p>Apply the <a class="reference internal" href="patterned-uris.html#patterned-uris"><span class="std std-ref">Patterned URI</span></a> pattern to
 create a common root URI and generate a simple URL “slug” by from
 the available text or keywords</p>
@@ -621,7 +621,7 @@ create a URL slug. A typical algorithm would be:</p>
 <li><p>Replace spaces with a dash</p></li>
 </ul>
 <p>The original text is then preserved by using it to <a class="reference internal" href="../chapter_3/label-everything.html#label-everything"><span class="std std-ref">label</span></a> the resource.</p>
-<h2 id="example-s"><span class="section-number">1.8.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
+<h2 id="example-s"><span class="section-number">8.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
 <p>For example if we are generating a URI for a category called
 “Heavy Metal” we might generate a URI as follows</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="c1">#Generate a patterned URI with a simple URL slug from &quot;Heavy Metal&quot;</span>
@@ -629,7 +629,7 @@ create a URL slug. A typical algorithm would be:</p>
   <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Heavy Metal&quot;</span>
 </code></pre></div>
 </div>
-<h2 id="discussion"><span class="section-number">1.8.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
+<h2 id="discussion"><span class="section-number">8.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
 <p>Clean URLs are easier to work with. If a dataset (or any website)
 has an inconsistent policy about the casing and encoding used in
 URLs then it can be more difficult to generate links to that
@@ -645,12 +645,12 @@ issue. Using patterned URIs to divide the URI space into different
 unwanted collisions. Obviously in some cases collisions might be
 useful, e.g. to ensure that user input, which might vary in
 casing, is normalized into a standard form.</p>
-<h2 id="related"><span class="section-number">1.8.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
+<h2 id="related"><span class="section-number">8.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="patterned-uris.html#patterned-uris"><span class="std std-ref">Patterned URI</span></a></p></li>
 <li><p><a class="reference internal" href="natural-keys.html#natural-keys"><span class="std std-ref">Natural Key</span></a></p></li>
 </ul>
-<h2 id="further-reading"><span class="section-number">1.8.6. </span>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">¶</a></h2>
+<h2 id="further-reading"><span class="section-number">8.6. </span>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Clean_URL#Slug">Slug (web publishing) on Wikipedia</a></p></li>
 </ul>
@@ -674,7 +674,7 @@ casing, is normalized into a standard form.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="shared-keys.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.7. Shared Keys" rel="prev">
+        <a href="shared-keys.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 7. Shared Keys" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -683,20 +683,20 @@ casing, is normalized into a standard form.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              1.7. Shared Keys
+              7. Shared Keys
             </div>
           </div>
         </a>
       
       
         
-        <a href="../chapter_3/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Modelling Patterns" rel="next">
+        <a href="../chapter_3/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: Modelling Patterns" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              2. Modelling Patterns
+              Modelling Patterns
             </div>
           </div>
           <div class="md-footer__button md-icon">

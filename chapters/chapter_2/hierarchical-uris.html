@@ -13,7 +13,7 @@
     
     
       
-        <title>1.1. Hierarchical URIs - Linked Data Patterns</title>
+        <title>1. Hierarchical URIs - Linked Data Patterns</title>
       
     
     
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.1. Hierarchical URIs
+              1. Hierarchical URIs
             
           </span>
         </div>
@@ -588,16 +588,16 @@
 
 
 
-  <h1 id="hierarchical-uris"><span id="id1"></span><span class="section-number">1.1. </span>Hierarchical URIs<a class="headerlink" href="#hierarchical-uris" title="Permalink to this heading">¶</a></h1>
+  <h1 id="hierarchical-uris"><span id="id1"></span><span class="section-number">1. </span>Hierarchical URIs<a class="headerlink" href="#hierarchical-uris" title="Permalink to this heading">¶</a></h1>
 <p><em>How should URIs be assigned to a group of resources that form a natural hierarchy?</em></p>
-<h2 id="context"><span class="section-number">1.1.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
+<h2 id="context"><span class="section-number">1.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>It is often the case that a collection of resources may form a
 natural hierarchy. E.g. the chapters within a book, or the
 departments within an organization. Reflecting this strict
 hierarchy within the URI structure makes those URIs more hackable
 allowing users/developers to “navigate” up the hierarchy by
 pruning the URI.</p>
-<h2 id="solution"><span class="section-number">1.1.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
+<h2 id="solution"><span class="section-number">1.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
 <p>Where a natural hierarchy exists between a set of resources use
 <a class="reference internal" href="patterned-uris.html#patterned-uris"><span class="std std-ref">Patterned URIs</span></a> that conform to the
 following pattern:</p>
@@ -610,13 +610,13 @@ chapter 1 of a specific book:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">books</span><span class="o">/</span><span class="mi">12345</span><span class="o">/</span><span class="n">chapters</span><span class="o">/</span><span class="mi">1</span>
 </code></pre></div>
 </div>
-<h2 id="example-s"><span class="section-number">1.1.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
+<h2 id="example-s"><span class="section-number">1.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
 <p>The discogs dataset in data-incubator uses hierarchical uris of the
 form:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">discogs</span><span class="o">.</span><span class="n">dataincubator</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">release</span><span class="o">/</span><span class="mi">22530</span><span class="o">/</span><span class="n">track</span><span class="o">/</span><span class="mi">1</span><span class="o">-</span><span class="mi">01</span>
 </code></pre></div>
 </div>
-<h2 id="discussion"><span class="section-number">1.1.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
+<h2 id="discussion"><span class="section-number">1.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
 <p>This technique is best suited to scenarios where the items in the
 sub-collections (chapters) are always associated with a single
 parent item. Other relationships might exist, e.g. the chapter may
@@ -626,7 +626,7 @@ circumstances where this doesn’t hold true, then it is best to
 just use simple Patterned URIs.</p>
 <p>The same applies to circumstances where the hierarchy may change
 over time.</p>
-<h2 id="related"><span class="section-number">1.1.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
+<h2 id="related"><span class="section-number">1.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="patterned-uris.html#patterned-uris"><span class="std std-ref">Patterned URIs</span></a></p></li>
 </ul>
@@ -650,7 +650,7 @@ over time.</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Identifier Patterns" rel="prev">
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Identifier Patterns" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -659,20 +659,20 @@ over time.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              1. Identifier Patterns
+              Identifier Patterns
             </div>
           </div>
         </a>
       
       
         
-        <a href="literal-keys.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1.2. Literal Keys" rel="next">
+        <a href="literal-keys.html" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Literal Keys" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              1.2. Literal Keys
+              2. Literal Keys
             </div>
           </div>
           <div class="md-footer__button md-icon">

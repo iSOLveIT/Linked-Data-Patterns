@@ -13,7 +13,7 @@
     
     
       
-        <title>2.1. Custom Datatype - Linked Data Patterns</title>
+        <title>1. Custom Datatype - Linked Data Patterns</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#context" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2.1. Custom Datatype
+              1. Custom Datatype
             
           </span>
         </div>
@@ -292,9 +297,66 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span title="chapters/chapter_3/custom-datatype (document)" class="md-ellipsis">Custom Datatype</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="" class="md-nav__link md-nav__link--active">
         <span title="chapters/chapter_3/custom-datatype (document)" class="md-ellipsis">Custom Datatype</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_3/custom-datatype (document)" class="md-ellipsis">Custom Datatype</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -547,8 +609,53 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_3/custom-datatype (document)" class="md-ellipsis">Custom Datatype</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -565,75 +672,32 @@
 
 
 
-  <h1 id="custom-datatype"><span id="id1"></span><span class="section-number">2.1. </span>Custom Datatype<a class="headerlink" href="#custom-datatype" title="Permalink to this heading">¶</a></h1>
-<blockquote>
-<div><blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">name<span class="colon">:</span></dt>
-<dd class="field-odd"><p>custom-datatype</p>
-</dd>
-<dt class="field-even">class<span class="colon">:</span></dt>
-<dd class="field-even"><p>title</p>
-</dd>
-</dl>
-</div></blockquote>
-<p><em>A data model contains structured values that don’t correspond to one
-of the pre-existing XML Schema datatypes</em></p>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="context">Context</p>
-</div>
-</div>
-</div>
+  <h1 id="custom-datatype"><span id="id1"></span><span class="section-number">1. </span>Custom Datatype<a class="headerlink" href="#custom-datatype" title="Permalink to this heading">¶</a></h1>
+<p><em>A data model contains structured values that don’t correspond to one of the pre-existing XML Schema datatypes</em></p>
+<h2 id="context"><span class="section-number">1.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>Some applications may have pre-defined custom datatypes for
 describing the structure of literal values. It is useful to
 preserve this type information when publishing it as RDF in order
 to allow applications to handle them correctly.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="solution">Solution</p>
-</div>
-</div>
-</div>
+<h2 id="solution"><span class="section-number">1.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
 <p>Create a URI to identify the custom datatype and use that URI when
-creating <a class="reference external" href="typed-literal.html">Typed Literals</a></p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="examples">Example(s)</p>
-</div>
-</div>
-</div>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>#Define a URI for different forms of shipping codes
-&lt;http:www.example.org/datatype/FedexShippingCode&gt;
-  rdfs:label &quot;Fedex Shipping Code&quot;.
-&lt;http:www.example.org/datatype/UPSShippingCode&gt;
-  rdfs:label &quot;UPS Shipping Code&quot;.
+creating <a class="reference internal" href="typed-literal.html#typed-literal"><span class="std std-ref">Typed Literals</span></a></p>
+<h2 id="example-s"><span class="section-number">1.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="c1">#Define a URI for different forms of shipping codes</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">datatype</span><span class="o">/</span><span class="n">FedexShippingCode</span><span class="o">&gt;</span>
+  <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Fedex Shipping Code&quot;</span><span class="o">.</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">datatype</span><span class="o">/</span><span class="n">UPSShippingCode</span><span class="o">&gt;</span>
+  <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;UPS Shipping Code&quot;</span><span class="o">.</span>
 
-#Indicate the form of shipping code with a Typed Literal
-_:delivery1
-  ex:shippingCode &quot;1234-568&quot;^^&lt;http:www.example.org/datatype/FedexShippingCode&gt;.
+<span class="c1">#Indicate the form of shipping code with a Typed Literal</span>
+<span class="n">_</span><span class="p">:</span><span class="n">delivery1</span>
+  <span class="n">ex</span><span class="p">:</span><span class="n">shippingCode</span> <span class="s2">&quot;1234-568&quot;</span><span class="o">^^&lt;</span><span class="n">http</span><span class="p">:</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">datatype</span><span class="o">/</span><span class="n">FedexShippingCode</span><span class="o">&gt;.</span>
 
-_:delivery1
-  ex:shippingCode &quot;abcd/zx&quot;^^&lt;http:www.example.org/datatype/UPSShippingCode&gt;.
+<span class="n">_</span><span class="p">:</span><span class="n">delivery1</span>
+  <span class="n">ex</span><span class="p">:</span><span class="n">shippingCode</span> <span class="s2">&quot;abcd/zx&quot;</span><span class="o">^^&lt;</span><span class="n">http</span><span class="p">:</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">datatype</span><span class="o">/</span><span class="n">UPSShippingCode</span><span class="o">&gt;.</span>
 </code></pre></div>
 </div>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="discussion">Discussion</p>
-</div>
-</div>
-</div>
+<h2 id="discussion"><span class="section-number">1.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
 <p>RDF does not place any limits on what datatypes might be
 associated with a literal. The model recommends using a standard
 type library, like XML Schema, wherever possible but the only real
@@ -652,28 +716,23 @@ the range of types it understands.</p>
 modelled as a sub-property. Continuing the above example, instead
 of defining a new type for each shipping code, the model could
 have instead been structured as:</p>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>&lt;http:www.example.org/def/post/fedexShippingCode&gt;
-  a rdfs:Property;
-  rdfs:subPropertyOf &lt;http:www.example.org/def/post/shippingCode&gt;
-  rdfs:label &quot;Fedex Shipping Code&quot;.
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">def</span><span class="o">/</span><span class="n">post</span><span class="o">/</span><span class="n">fedexShippingCode</span><span class="o">&gt;</span>
+  <span class="n">a</span> <span class="n">rdfs</span><span class="p">:</span><span class="n">Property</span><span class="p">;</span>
+  <span class="n">rdfs</span><span class="p">:</span><span class="n">subPropertyOf</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">def</span><span class="o">/</span><span class="n">post</span><span class="o">/</span><span class="n">shippingCode</span><span class="o">&gt;</span>
+  <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Fedex Shipping Code&quot;</span><span class="o">.</span>
 
-#Use the derived property:
-_:delivery1
-  ex:fedexShippingCode &quot;1234-568&quot;.
+<span class="c1">#Use the derived property:</span>
+<span class="n">_</span><span class="p">:</span><span class="n">delivery1</span>
+  <span class="n">ex</span><span class="p">:</span><span class="n">fedexShippingCode</span> <span class="s2">&quot;1234-568&quot;</span><span class="o">.</span>
 </code></pre></div>
 </div>
-<p>`
-The advantages of this alternate approaches are:</p>
-<div class="itemizedlist docutils container">
+<p>The advantages of this alternate approaches are:</p>
 <ul class="simple">
 <li><p>Simpler querying of data by allowing the use of triple
-patterns, rather than FILTERs for extracting data of a
-common type.</p></li>
+patterns, rather than FILTERs for extracting data of a common type.</p></li>
 <li><p>More explicit, fine-grained semantics</p></li>
 </ul>
-</div>
 <p>But there are several disadvantages to this approach:</p>
-<div class="itemizedlist docutils container">
 <ul class="simple">
 <li><p>Increases the number of very similar properties, requiring
 redundancy of data or reasoning to allow applications to
@@ -681,58 +740,26 @@ treat them generically</p></li>
 <li><p>Doesn’t address the core requirement to indicate the lexical
 form of a structured value</p></li>
 </ul>
-</div>
 <p>With this in mind the general recommendation is to:</p>
-<div class="itemizedlist docutils container">
 <ul class="simple">
 <li><p>Use a custom datatype to label particular types of
 structured value that share a common lexical form. These
 values may be associated with a broad range of different
 properties. Processing applications may want to implement a
-common set type conversions or display options for the
-values.</p></li>
+common set type conversions or display options for the values.</p></li>
 <li><p>Use a sub-property in all other cases</p></li>
 </ul>
-</div>
 <p>Note that these options aren’t always mutually exclusive. It might
 be useful in some scenarios to have an explicit property for
-associating a general class of code, identifier, or other <a class="reference external" href="literal-keys.html">Literal
-Key</a> with a resource, but also assign a
+associating a general class of code, identifier, or other
+<a class="reference internal" href="../chapter_2/literal-keys.html#literal-keys"><span class="std std-ref">Literal Key</span></a> with a resource, but also assign a
 specific datatype to the identifier as a cue for applications and
 reasoners</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="related">Related</p>
-</div>
-</div>
-</div>
-<div class="itemizedlist docutils container">
+<h2 id="related"><span class="section-number">1.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="typed-literal.html">Typed Literal</a></p></li>
-<li><p><a class="reference external" href="literal-keys.html">Literal Key</a></p></li>
+<li><p><a class="reference internal" href="typed-literal.html#typed-literal"><span class="std std-ref">Typed Literal</span></a></p></li>
+<li><p><a class="reference internal" href="../chapter_2/literal-keys.html#literal-keys"><span class="std std-ref">Literal Key</span></a></p></li>
 </ul>
-</div>
-</div>
-</div></blockquote>
-<div class="navfooter docutils container">
-<table class="docutils data align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="modelling-patterns.html">Prev</a></p></td>
-<td><p><a class="reference external" href="modelling-patterns.html">Up</a></p></td>
-<td><p> <a class="reference external" href="index-resources.html">Next</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Chapter 3. Modelling
-Patterns</p></td>
-<td><p><a class="reference external" href="index-2.html">Ho
-me</a></p></td>
-<td><p>Index Resources</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 
 
 
@@ -753,7 +780,7 @@ me</a></p></td>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. Modelling Patterns" rel="prev">
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Modelling Patterns" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -762,20 +789,20 @@ me</a></p></td>
               <span class="md-footer__direction">
                 Previous
               </span>
-              2. Modelling Patterns
+              Modelling Patterns
             </div>
           </div>
         </a>
       
       
         
-        <a href="index-resources.html" class="md-footer__link md-footer__link--next" aria-label="Next: 2.2. Index Resources" rel="next">
+        <a href="index-resources.html" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Index Resources" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              2.2. Index Resources
+              2. Index Resources
             </div>
           </div>
           <div class="md-footer__button md-icon">
