@@ -13,7 +13,7 @@
     
     
       
-        <title>1.5. Named Graphs - Linked Data Patterns</title>
+        <title>5.5. Named Graphs - Linked Data Patterns</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#context" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.5. Named Graphs
+              5.5. Named Graphs
             
           </span>
         </div>
@@ -378,9 +383,66 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span title="chapters/chapter_5/named-graphs (document)" class="md-ellipsis">Named Graph</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="" class="md-nav__link md-nav__link--active">
         <span title="chapters/chapter_5/named-graphs (document)" class="md-ellipsis">Named Graph</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_5/named-graphs (document)" class="md-ellipsis">Named Graph</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -435,8 +497,53 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_5/named-graphs (document)" class="md-ellipsis">Named Graph</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -453,28 +560,9 @@
 
 
 
-  <h1 id="named-graphs"><span id="id1"></span><span class="section-number">1.5. </span>Named Graphs<a class="headerlink" href="#named-graphs" title="Permalink to this heading">¶</a></h1>
-<blockquote>
-<div><blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">name<span class="colon">:</span></dt>
-<dd class="field-odd"><p>named-graph</p>
-</dd>
-<dt class="field-even">class<span class="colon">:</span></dt>
-<dd class="field-even"><p>title</p>
-</dd>
-</dl>
-</div></blockquote>
-<p><em>How can we identify a useful sub-set of RDF triples within a triple
-store?</em></p>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="context">Context</p>
-</div>
-</div>
-</div>
+  <h1 id="named-graphs"><span id="id1"></span><span class="section-number">5.5. </span>Named Graphs<a class="headerlink" href="#named-graphs" title="Permalink to this heading">¶</a></h1>
+<p><em>How can we identify a useful sub-set of RDF triples within a triple store?</em></p>
+<h2 id="context"><span class="section-number">5.5.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>A triplestore is a set of RDF triples. Upon loading some RDF data
 into such a collection we lose the ability to be able to identify
 a sub-set of RDF triples, e.g. to identify their source of origin.
@@ -482,65 +570,41 @@ We also lose knowledge of whether a single triple was asserted
 once or multiple times, e.g. by separate distinct sources. While
 it is possible to extract triples based on particular graph
 patterns, e.g. all triples with the same subject, predicate, or
-object there is no way to recover the original contect.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="solution">Solution</p>
-</div>
-</div>
-</div>
+object there is no way to recover the original context.</p>
+<h2 id="solution"><span class="section-number">5.5.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
 <p>Use URIs to identify collections of statements. Where necessary
 associate a triple with this URI to create a <em>quad</em></p>
 <p>By assigning a URI to a set of triples and my retaining that
 additional identifier in the store (a <em>quad store</em>), we can either
 treat the whole collection as a single set of triples, or work
 with an subset based on its graph identifier.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="examples">Example(s)</p>
-</div>
-</div>
-</div>
+<h2 id="example-s"><span class="section-number">5.5.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
 <p>The following example shows an RDF graph using the TRiG notation
 (Turtle plus graphs)</p>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>@prefix ex: &lt;http://www.example.org/&gt; .
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@prefix</span> <span class="n">ex</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/&gt;</span> <span class="o">.</span>
 
-#Named graph in TRiG
-&lt;http://www.example.org/graph/1&gt; {
-        &lt;http://www.example.org/document/7&gt; rdfs:label &quot;Example&quot;.
-}
+<span class="c1">#Named graph in TRiG</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graph</span><span class="o">/</span><span class="mi">1</span><span class="o">&gt;</span> <span class="p">{</span>
+   <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">document</span><span class="o">/</span><span class="mi">7</span><span class="o">&gt;</span> <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Example&quot;</span><span class="o">.</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 <p>The following example shows an RDF graph using the NQuads notation
 (N-Triples plus graphs)</p>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>&lt;http://www.example.org/document/7&gt; rdfs:label &quot;Example&quot; &lt;http://www.example.org/graph/1&gt;.
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">document</span><span class="o">/</span><span class="mi">7</span><span class="o">&gt;</span> <span class="n">rdfs</span><span class="p">:</span><span class="n">label</span> <span class="s2">&quot;Example&quot;</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graph</span><span class="o">/</span><span class="mi">1</span><span class="o">&gt;.</span>
 </code></pre></div>
 </div>
 <p>In both cases the graphs contain a single RDF triple</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="discussion">Discussion</p>
-</div>
-</div>
-</div>
+<h2 id="discussion"><span class="section-number">5.5.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
 <p>The idea of extending the triple into a quad, through the addition
 of an additional URI has been around for many years. The Many
 early triple stores supported the notion of a quad, with the
 majority now supporting named graphs as a key feature. SPARQL 1.0
 was the first semantic web specification to directly reference the
 concept, allowing queries to be addressed to an individual named
-graph or a collection of graphs. Syntaxes for serialising named
+graph or a collection of graphs. Syntax’s for serialising named
 graphs also exist, allowing quads to be exchanged between systems.
-The most commmonly used quad syntaxes are TRiG (a derivative of
+The most commonly used quad syntax’s are TRiG (a derivative of
 Turtle) and NQuads (a derivative of NTriples.</p>
 <p>By extending the core RDF model from a triple to a quad, Named
 graphs provide a useful extra degree of freedom when managing an
@@ -556,26 +620,21 @@ sources.</p>
 <p>Graphs have been usefully applied to solving a number of different
 data management problems in RDF applications. Some recorded uses
 for Named Graphs include:</p>
-<div class="itemizedlist docutils container">
 <ul class="simple">
 <li><p><em>Tracking provenance of RDF data</em> — here the extra URI is
 used to track the source of the data; especially useful for
 web crawling scenarios</p></li>
 <li><p><em>Replication of RDF graphs</em> — triples are grouped into sets,
-labelled by a URI, that may then be separately exchanged and
-replicated</p></li>
+labelled by a URI, that may then be separately exchanged and replicated</p></li>
 <li><p><em>Managing RDF datasets</em> — here the set of triples may be an
 entire RDF dataset, e.g. all of dbpedia, or all of
-musicbrainz, making it easier to identify and query subsets
-within an aggregation</p></li>
+musicbrainz, making it easier to identify and query subsets within an aggregation</p></li>
 <li><p><em>Versioning</em> — the URI identifies a set of triples, and that
 URI may be separately described, e.g. to capture the
-creation &amp; modification dates of the triples in that set,
-who performed the change, etc.</p></li>
+creation &amp; modification dates of the triples in that set, who performed the change, etc.</p></li>
 <li><p><em>Access Control</em> — by identifying sets of triples we can
 then record access control related metadata</p></li>
 </ul>
-</div>
 <p>The lack of standardisation about what the graph URI associated
 with a named graph identifies means that different applications
 have used it for different purposes. For example one application
@@ -588,43 +647,15 @@ identifier or label that can be associated with some triples. The
 fact that the identifier is a URI has some added benefits. For
 example we could then capture RDF statements to describe the
 graph. This has been applied as an alternative to
-<a class="reference external" href="reified-statement.html">reification</a> for handling versioning
-and provenance in datasets, but <a class="reference external" href="graph-annotation.html">graph
-annotation</a> is useful in a number of
+<a class="reference internal" href="../chapter_3/reified-statement.html#reified-statement"><span class="std std-ref">reification</span></a> for handling versioning
+and provenance in datasets, but
+<a class="reference internal" href="graph-annotation.html#graph-annotation"><span class="std std-ref">graph annotation</span></a> is useful in a number of
 scenarios.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="related">Related</p>
-</div>
-</div>
-</div>
-<div class="itemizedlist docutils container">
+<h2 id="related"><span class="section-number">5.5.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="reified-statement.html">Reified Statement</a></p></li>
-<li><p><a class="reference external" href="graph-annotation.html">Graph Annotation</a></p></li>
+<li><p><a class="reference internal" href="../chapter_3/reified-statement.html#reified-statement"><span class="std std-ref">Reified Statement</span></a></p></li>
+<li><p><a class="reference internal" href="graph-annotation.html#graph-annotation"><span class="std std-ref">Graph Annotation</span></a></p></li>
 </ul>
-</div>
-</div>
-</div></blockquote>
-<div class="navfooter docutils container">
-<table class="docutils data align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="graph-per-source.html">Prev</a></p></td>
-<td><p><a class="reference external" href="data-management-patterns.html">Up</a></p></td>
-<td><p> <a href="#id2"><span class="problematic" id="id3">`Next &lt;
-union-graph.html&gt;`__</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p>Graph Per Source</p></td>
-<td><p><a class="reference external" href="index-2.html">Ho
-me</a></p></td>
-<td><p>Union Graph</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 
 
 
@@ -645,7 +676,7 @@ me</a></p></td>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="graph-per-source.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.4. Graph Per Source" rel="prev">
+        <a href="graph-per-source.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5.4. Graph Per Source" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -654,20 +685,20 @@ me</a></p></td>
               <span class="md-footer__direction">
                 Previous
               </span>
-              1.4. Graph Per Source
+              5.4. Graph Per Source
             </div>
           </div>
         </a>
       
       
         
-        <a href="union-graph.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1.6. Union Graph" rel="next">
+        <a href="union-graph.html" class="md-footer__link md-footer__link--next" aria-label="Next: 5.6. Union Graph" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              1.6. Union Graph
+              5.6. Union Graph
             </div>
           </div>
           <div class="md-footer__button md-icon">

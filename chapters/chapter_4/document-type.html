@@ -13,7 +13,7 @@
     
     
       
-        <title>4. Document Type - Linked Data Patterns</title>
+        <title>4.4. Document Type - Linked Data Patterns</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#context" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4. Document Type
+              4.4. Document Type
             
           </span>
         </div>
@@ -349,9 +354,66 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span title="chapters/chapter_4/document-type (document)" class="md-ellipsis">Document Type</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="" class="md-nav__link md-nav__link--active">
         <span title="chapters/chapter_4/document-type (document)" class="md-ellipsis">Document Type</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_4/document-type (document)" class="md-ellipsis">Document Type</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -533,8 +595,53 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_4/document-type (document)" class="md-ellipsis">Document Type</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -551,91 +658,48 @@
 
 
 
-  <h1 id="document-type"><span id="id1"></span><span class="section-number">4. </span>Document Type<a class="headerlink" href="#document-type" title="Permalink to this heading">¶</a></h1>
-<blockquote>
-<div><blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">name<span class="colon">:</span></dt>
-<dd class="field-odd"><p>document-type</p>
-</dd>
-<dt class="field-even">class<span class="colon">:</span></dt>
-<dd class="field-even"><p>title</p>
-</dd>
-</dl>
-</div></blockquote>
-<p><em>How can some context be provided about a set of RDF triples
-published to the web?</em></p>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="context">Context</p>
-</div>
-</div>
-</div>
+  <h1 id="document-type"><span id="id1"></span><span class="section-number">4.4. </span>Document Type<a class="headerlink" href="#document-type" title="Permalink to this heading">¶</a></h1>
+<p><em>How can some context be provided about a set of RDF triples published to the web?</em></p>
+<h2 id="context"><span class="section-number">4.4.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>While the web of Linked Data is, in its broadest sense, a set of
 RDF triples, there are often circumstances in which it is useful
 to describe a smaller grouping of triples. RDF statements are
 published to the web as documents conforming to a particular
 syntax, e.g. RDF/XML, Turtle, or XHTML+RDFa. These documents may
-be directly inter-linked using <a class="reference external" href="see-also.html">See Also</a>
+be directly inter-linked using <a class="reference internal" href="see-also.html#see-also"><span class="std std-ref">See Also</span></a>
 relations. To enable user agents to select between links it is
 useful to indicate the type of document which a link is
 referencing.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="solution">Solution</p>
-</div>
-</div>
-</div>
+<h2 id="solution"><span class="section-number">4.4.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
 <p>Define a document type describing a conceptual or physical
 grouping of triples. Indicate where a specific document is of a
-particular type, including a <a class="reference external" href="topic-relation.html">Topic
-Relation</a> such as <code class="docutils literal notranslate"><span class="pre">foaf:primaryTopic</span></code> to
+particular type, including a <a class="reference internal" href="../chapter_3/topic-relation.html#topic-relation"><span class="std std-ref">Topic Relation</span></a>
+such as <code class="docutils literal notranslate"><span class="pre">foaf:primaryTopic</span></code> to
 relate the document to the resource(s) it is describing.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="examples">Example(s)</p>
-</div>
-</div>
-</div>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>#document type
-foaf:PersonalProfileDocument a foaf:Document.
+<h2 id="example-s"><span class="section-number">4.4.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="c1">#document type</span>
+<span class="n">foaf</span><span class="p">:</span><span class="n">PersonalProfileDocument</span> <span class="n">a</span> <span class="n">foaf</span><span class="p">:</span><span class="n">Document</span><span class="o">.</span>
 
-#specific instance of document, with indication of its topic
-&lt;http://www.example.org/doc/john&gt; a foaf:PersonalProfileDocument;
-   foaf:primaryTopic &lt;http://www.example.org/doc/john#me&gt;.
+<span class="c1">#specific instance of document, with indication of its topic</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">john</span><span class="o">&gt;</span> <span class="n">a</span> <span class="n">foaf</span><span class="p">:</span><span class="n">PersonalProfileDocument</span><span class="p">;</span>
+   <span class="n">foaf</span><span class="p">:</span><span class="n">primaryTopic</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">john</span><span class="c1">#me&gt;.</span>
 
-&lt;http://www.example.org/doc/john#me&gt; a foaf:Person;
-   foaf:name &quot;John&quot;.
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">john</span><span class="c1">#me&gt; a foaf:Person;</span>
+   <span class="n">foaf</span><span class="p">:</span><span class="n">name</span> <span class="s2">&quot;John&quot;</span><span class="o">.</span>
 </code></pre></div>
 </div>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="discussion">Discussion</p>
-</div>
-</div>
-</div>
+<h2 id="discussion"><span class="section-number">4.4.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
 <p>XML is a document format and XML schemas describe the valid
 structure of documents. In contrast RDF is defined in terms of
 sets of triples and schemas are used to support inferencing and
 description of data structures. It is often useful to describe
 specific collections of triples. For example within a triple store
-it is often useful to group triples into <a class="reference external" href="named-graphs.html">Named
-Graphs</a>. These collections can be usefully
+it is often useful to group triples into
+<a class="reference internal" href="../chapter_5/named-graphs.html#named-graphs"><span class="std std-ref">Named Graphs</span></a>. These collections can be usefully
 annotated in various ways, e.g. indicating their provenance,
 creation date, origin, etc.</p>
 <p>Collections of triples may be published to the web using a variety
-of syntaxes and mechanisms. It can be useful to partition data
+of syntax’s and mechanisms. It can be useful to partition data
 into a number of different documents, e.g. to simplify the
 publishing process or usefully present data to user agents. By
 annotating the documents to indicate their type we can usefully
@@ -655,45 +719,17 @@ a <code class="docutils literal notranslate"><span class="pre">foaf:PersonalProf
 primarily describes a particular person (but may include
 additional data).</p>
 <p>The Document Type pattern is most commonly used in conjunction
-with the <a class="reference external" href="see-also.html">See Also</a> and
-<a class="reference external" href="annotation.html">Annotation</a> patterns. It could also usefully
-be applied when referencing a <a class="reference external" href="link-base.html">Link Base</a>,
-allowing a user agent to more easily discover <a class="reference external" href="equivalence-links.html">Equivalence
-Links</a> related to a specific
+with the <a class="reference internal" href="see-also.html#see-also"><span class="std std-ref">See Also</span></a> and
+<a class="reference internal" href="annotation.html#annotation"><span class="std std-ref">Annotation</span></a> patterns. It could also usefully
+be applied when referencing a <a class="reference internal" href="link-base.html#link-base"><span class="std std-ref">Link Base</span></a>,
+allowing a user agent to more easily discover
+<a class="reference internal" href="equivalence-links.html#equivalence-links"><span class="std std-ref">Equivalence Links</span></a> related to a specific
 resource(s).</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="related">Related</p>
-</div>
-</div>
-</div>
-<div class="itemizedlist docutils container">
+<h2 id="related"><span class="section-number">4.4.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="named-graphs.html">Named Graphs</a></p></li>
-<li><p><a class="reference external" href="see-also.html">See Also</a></p></li>
+<li><p><a class="reference internal" href="../chapter_5/named-graphs.html#named-graphs"><span class="std std-ref">Named Graphs</span></a></p></li>
+<li><p><a class="reference internal" href="see-also.html#see-also"><span class="std std-ref">See Also</span></a></p></li>
 </ul>
-</div>
-</div>
-</div></blockquote>
-<div class="navfooter docutils container">
-<table class="docutils data align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="dataset-autodiscovery.html">Prev</a></p></td>
-<td><p><a class="reference external" href="publishing-patterns.html">Up</a></p></td>
-<td><p> <a class="reference external" href="edit-trail.html">Next</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Dataset
-Autodiscovery</p></td>
-<td><p><a class="reference external" href="index-2.html">Ho
-me</a></p></td>
-<td><p>Edit Trail</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 
 
 
@@ -714,7 +750,7 @@ me</a></p></td>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="dataset-autodiscovery.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Dataset Autodiscovery" rel="prev">
+        <a href="dataset-autodiscovery.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4.3. Dataset Autodiscovery" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -723,20 +759,20 @@ me</a></p></td>
               <span class="md-footer__direction">
                 Previous
               </span>
-              3. Dataset Autodiscovery
+              4.3. Dataset Autodiscovery
             </div>
           </div>
         </a>
       
       
         
-        <a href="edit-trail.html" class="md-footer__link md-footer__link--next" aria-label="Next: 5. Edit Trail" rel="next">
+        <a href="edit-trail.html" class="md-footer__link md-footer__link--next" aria-label="Next: 4.5. Edit Trail" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              5. Edit Trail
+              4.5. Edit Trail
             </div>
           </div>
           <div class="md-footer__button md-icon">

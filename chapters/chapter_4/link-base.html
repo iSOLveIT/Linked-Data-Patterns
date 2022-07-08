@@ -13,7 +13,7 @@
     
     
       
-        <title>8. Link Base - Linked Data Patterns</title>
+        <title>4.8. Link Base - Linked Data Patterns</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#context" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              8. Link Base
+              4.8. Link Base
             
           </span>
         </div>
@@ -405,9 +410,66 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span title="chapters/chapter_4/link-base (document)" class="md-ellipsis">Link Base</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="" class="md-nav__link md-nav__link--active">
         <span title="chapters/chapter_4/link-base (document)" class="md-ellipsis">Link Base</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_4/link-base (document)" class="md-ellipsis">Link Base</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -533,8 +595,53 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_4/link-base (document)" class="md-ellipsis">Link Base</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -551,28 +658,9 @@
 
 
 
-  <h1 id="link-base"><span id="id1"></span><span class="section-number">8. </span>Link Base<a class="headerlink" href="#link-base" title="Permalink to this heading">¶</a></h1>
-<blockquote>
-<div><blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">name<span class="colon">:</span></dt>
-<dd class="field-odd"><p>link-base</p>
-</dd>
-<dt class="field-even">class<span class="colon">:</span></dt>
-<dd class="field-even"><p>title</p>
-</dd>
-</dl>
-</div></blockquote>
-<p><em>How can outbound links from a dataset be managed separately from the
-core data?</em></p>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="context">Context</p>
-</div>
-</div>
-</div>
+  <h1 id="link-base"><span id="id1"></span><span class="section-number">4.8. </span>Link Base<a class="headerlink" href="#link-base" title="Permalink to this heading">¶</a></h1>
+<p><em>How can outbound links from a dataset be managed separately from the core data?</em></p>
+<h2 id="context"><span class="section-number">4.8.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>When publishing Linked Data it is common to undertake the
 inter-linking of newly published data with existing sources as a
 final step in the publishing process. Linking strategies range
@@ -584,46 +672,22 @@ necessary to remove links to some external resource.</p>
 <p>The linking data within a dataset may therefore have different
 quality assurances associated with it, as well as a different rate
 of change to the core dataset.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="solution">Solution</p>
-</div>
-</div>
-</div>
+<h2 id="solution"><span class="section-number">4.8.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
 <p>Partition the data into two datasets: the core data and the
 linking data. Publish linking data as a separate set of documents.
-Use <a class="reference external" href="see-also.html">See Also</a> links to tie the data together.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="examples">Example(s)</p>
-</div>
-</div>
-</div>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>#Core Data
-&lt;http://www.example.org/places/Paris&gt; a ex:Place;
-  skos:prefLabel &quot;Paris&quot;;
-  rdfs:seeAlso &lt;http://www.example.org/links/Paris&gt;.
+Use <a class="reference internal" href="see-also.html#see-also"><span class="std std-ref">See Also</span></a> links to tie the data together.</p>
+<h2 id="example-s"><span class="section-number">4.8.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="c1">#Core Data</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">places</span><span class="o">/</span><span class="n">Paris</span><span class="o">&gt;</span> <span class="n">a</span> <span class="n">ex</span><span class="p">:</span><span class="n">Place</span><span class="p">;</span>
+  <span class="n">skos</span><span class="p">:</span><span class="n">prefLabel</span> <span class="s2">&quot;Paris&quot;</span><span class="p">;</span>
+  <span class="n">rdfs</span><span class="p">:</span><span class="n">seeAlso</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">links</span><span class="o">/</span><span class="n">Paris</span><span class="o">&gt;.</span>
 
-#Linking Data
-&lt;http://www.example.org/links/Paris&gt;
-  owl:sameAs &lt;http://dbpedia.org/resource/Paris&gt;.
+<span class="c1">#Linking Data</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">links</span><span class="o">/</span><span class="n">Paris</span><span class="o">&gt;</span>
+  <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dbpedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">resource</span><span class="o">/</span><span class="n">Paris</span><span class="o">&gt;.</span>
 </code></pre></div>
 </div>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="discussion">Discussion</p>
-</div>
-</div>
-</div>
+<h2 id="discussion"><span class="section-number">4.8.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
 <p>Partitioning links from core data has a number of advantages in
 terms of both how it is published and how it is consumed.</p>
 <p>For the publisher, partitioning links allows the linking data to
@@ -642,38 +706,10 @@ that of the core data, the ability to selectively consume only the
 core data is an important one. If the linking data is presented as
 part of the core dataset, then this requires the consumer to
 filter the data to remove the unneeded triples.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="related">Related</p>
-</div>
-</div>
-</div>
-<div class="itemizedlist docutils container">
+<h2 id="related"><span class="section-number">4.8.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="equivalence-links.html">Equivalence Links</a></p></li>
+<li><p><a class="reference internal" href="equivalence-links.html#equivalence-links"><span class="std std-ref">Equivalence Links</span></a></p></li>
 </ul>
-</div>
-</div>
-</div></blockquote>
-<div class="navfooter docutils container">
-<table class="docutils data align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="equivalence-links.html">Prev</a></p></td>
-<td><p><a class="reference external" href="publishing-patterns.html">Up</a></p></td>
-<td><p> <a class="reference external" href="materialize-inferences.html">Next</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Equivalence Links</p></td>
-<td><p><a class="reference external" href="index-2.html">Ho
-me</a></p></td>
-<td><p> Materialize
-Inferences</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 
 
 
@@ -694,7 +730,7 @@ Inferences</p></td>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="equivalence-links.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 7. Equivalence Links" rel="prev">
+        <a href="equivalence-links.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4.7. Equivalence Links" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -703,20 +739,20 @@ Inferences</p></td>
               <span class="md-footer__direction">
                 Previous
               </span>
-              7. Equivalence Links
+              4.7. Equivalence Links
             </div>
           </div>
         </a>
       
       
         
-        <a href="materialize-inferences.html" class="md-footer__link md-footer__link--next" aria-label="Next: 9. Materialize Inferences" rel="next">
+        <a href="materialize-inferences.html" class="md-footer__link md-footer__link--next" aria-label="Next: 4.9. Materialize Inferences" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              9. Materialize Inferences
+              4.9. Materialize Inferences
             </div>
           </div>
           <div class="md-footer__button md-icon">

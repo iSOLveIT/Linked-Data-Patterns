@@ -13,7 +13,7 @@
     
     
       
-        <title>1.1. Graph Annotation - Linked Data Patterns</title>
+        <title>5.1. Graph Annotation - Linked Data Patterns</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#context" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1.1. Graph Annotation
+              5.1. Graph Annotation
             
           </span>
         </div>
@@ -322,9 +327,73 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span title="chapters/chapter_5/graph-annotation (document)" class="md-ellipsis">Graph Annotation</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="" class="md-nav__link md-nav__link--active">
         <span title="chapters/chapter_5/graph-annotation (document)" class="md-ellipsis">Graph Annotation</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_5/graph-annotation (document)" class="md-ellipsis">Graph Annotation</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">Further Reading</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -435,8 +504,60 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_5/graph-annotation (document)" class="md-ellipsis">Graph Annotation</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">Further Reading</span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -453,65 +574,26 @@
 
 
 
-  <h1 id="graph-annotation"><span id="id1"></span><span class="section-number">1.1. </span>Graph Annotation<a class="headerlink" href="#graph-annotation" title="Permalink to this heading">¶</a></h1>
-<blockquote>
-<div><blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">name<span class="colon">:</span></dt>
-<dd class="field-odd"><p>graph-annotation</p>
-</dd>
-<dt class="field-even">class<span class="colon">:</span></dt>
-<dd class="field-even"><p>title</p>
-</dd>
-</dl>
-</div></blockquote>
+  <h1 id="graph-annotation"><span id="id1"></span><span class="section-number">5.1. </span>Graph Annotation<a class="headerlink" href="#graph-annotation" title="Permalink to this heading">¶</a></h1>
 <p><em>How can we capture some metadata about a collection of triples?</em></p>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="context">Context</p>
-</div>
-</div>
-</div>
+<h2 id="context"><span class="section-number">5.1.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>There are a number of scenarios where it is useful to capture some
 metadata about a collection of statements in a triplestore. For
 example we may want to capture:</p>
-<div class="itemizedlist docutils container">
 <ul class="simple">
-<li><p>publication metadata, such as the date that the triples were
-asserted or last updated</p></li>
-<li><p>provenance metadata, e.g. who asserted those triples, or how
-they were generated</p></li>
-<li><p>access control data, e.g. which user(s) or role(s) can
-access those triples</p></li>
+<li><p>publication metadata, such as the date that the triples were asserted or last updated</p></li>
+<li><p>provenance metadata, e.g. who asserted those triples, or how they were generated</p></li>
+<li><p>access control data, e.g. which user(s) or role(s) can access those triples</p></li>
 </ul>
-</div>
-<p>The <a class="reference external" href="named-graphs.html">Named Graph</a> pattern allows us to
+<p>The <a class="reference internal" href="named-graphs.html#named-graphs"><span class="std std-ref">Named Graph</span></a> pattern allows us to
 identify a set of triples, via a URI.But how do we then capture
 information about that graph?</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="solution">Solution</p>
-</div>
-</div>
-</div>
-<p>Treat the <a class="reference external" href="named-graphs.html">Named Graph</a> like any other
+<h2 id="solution"><span class="section-number">5.1.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
+<p>Treat the <a class="reference internal" href="named-graphs.html#named-graphs"><span class="std std-ref">Named Graph</span></a> like any other
 resource in your dataset and make additional RDF statements about
 the graph itself. Those additional statements can themselves be
 stored in a further named graph.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="examples">Example(s)</p>
-</div>
-</div>
-</div>
+<h2 id="example-s"><span class="section-number">5.1.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
 <p>A triple store contains a Named Graph that is used to store the
 results of transforming a local database into RDF. The Named Graph
 has been given the identifier of
@@ -522,22 +604,22 @@ conversion was last executed and the data stored. It is also
 useful to know which version of the conversion software was used,
 to track potential bugs. This additional metadata could be
 captured as follows:</p>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>@prefix ex: &lt;http://www.example.org/&gt; .
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@prefix</span> <span class="n">ex</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/&gt;</span> <span class="o">.</span>
 
-#Named graph containing results of database conversion
-&lt;http://app.example.org/graphs/my-database&gt; {
-   ...triples from conversion...
-}
+<span class="c1">#Named graph containing results of database conversion</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">database</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="o">...</span><span class="n">triples</span> <span class="kn">from</span> <span class="nn">conversion...</span>
+<span class="p">}</span>
 
-#Metadata graph
-&lt;http://app.example.org/graphs&gt; {
-  #Description of a named graph in this dataset
-  &lt;http://app.example.org/graphs/my-database&gt; dct:source &lt;http://app.example.org/database/customers&gt;
-  &lt;http://app.example.org/graphs/my-database&gt; dct:created &quot;2012-05-28&quot;^^xsd:date.
-  &lt;http://app.example.org/graphs/my-database&gt; foaf:generatorAgent &lt;http://app.example.org/converter/0.0.5&gt;.
+<span class="c1">#Metadata graph</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="c1">#Description of a named graph in this dataset</span>
+  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">database</span><span class="o">&gt;</span> <span class="n">dct</span><span class="p">:</span><span class="n">source</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">database</span><span class="o">/</span><span class="n">customers</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">database</span><span class="o">&gt;</span> <span class="n">dct</span><span class="p">:</span><span class="n">created</span> <span class="s2">&quot;2012-05-28&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">date</span><span class="o">.</span>
+  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">database</span><span class="o">&gt;</span> <span class="n">foaf</span><span class="p">:</span><span class="n">generatorAgent</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">converter</span><span class="o">/</span><span class="mf">0.0.5</span><span class="o">&gt;.</span>
 
-  ...descriptions of other graphs...
-}
+  <span class="o">...</span><span class="n">descriptions</span> <span class="n">of</span> <span class="n">other</span> <span class="n">graphs</span><span class="o">...</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 <p>In the above example there are two graphs in the dataset: the
@@ -545,16 +627,8 @@ graph containing the data from the conversion and a second graph
 containing metadata about the first. An application that needed to
 identify the date that some triples were asserted can easily do
 this by querying the metadata graph.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="discussion">Discussion</p>
-</div>
-</div>
-</div>
-<p>The majority of <a class="reference external" href="named-graphs.html">Named Graph</a> uses cases
+<h2 id="discussion"><span class="section-number">5.1.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
+<p>The majority of <a class="reference internal" href="named-graphs.html#named-graphs"><span class="std std-ref">Named Graph</span></a> uses cases
 require some additional context to be captured about the set of
 triples labelled with a graph URI. Describing named graphs in RDF,
 by using the graph URI as the subject of additional RDF
@@ -566,22 +640,22 @@ extra statements are recorded. However it is also possible to use
 multiple named graphs. In this case we might have one graph for
 the data and one “parallel” graph that captures the context. For
 example if we could adjust the above example as follows:</p>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>@prefix ex: &lt;http://www.example.org/&gt; .
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@prefix</span> <span class="n">ex</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/&gt;</span> <span class="o">.</span>
 
-#Named graph containing results of database conversion
-&lt;http://app.example.org/graphs/my-database&gt; {
-   ...triples from conversion...
-}
+<span class="c1">#Named graph containing results of database conversion</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">database</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="o">...</span><span class="n">triples</span> <span class="kn">from</span> <span class="nn">conversion...</span>
+<span class="p">}</span>
 
-#&quot;Parallel&quot; metadata graph
-&lt;http://app.example.org/metadata-graphs/my-database&gt; {
-  #Description of  named graph in this dataset
-  &lt;http://app.example.org/graphs/my-database&gt; dct:source &lt;http://app.example.org/database/customers&gt;
-  &lt;http://app.example.org/graphs/my-database&gt; dct:created &quot;2012-05-28&quot;^^xsd:date.
-  &lt;http://app.example.org/graphs/my-database&gt; foaf:generatorAgent &lt;http://app.example.org/converter/0.0.5&gt;.
-}
-...other named graphs
-}
+<span class="c1">#&quot;Parallel&quot; metadata graph</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">metadata</span><span class="o">-</span><span class="n">graphs</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">database</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="c1">#Description of  named graph in this dataset</span>
+  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">database</span><span class="o">&gt;</span> <span class="n">dct</span><span class="p">:</span><span class="n">source</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">database</span><span class="o">/</span><span class="n">customers</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">database</span><span class="o">&gt;</span> <span class="n">dct</span><span class="p">:</span><span class="n">created</span> <span class="s2">&quot;2012-05-28&quot;</span><span class="o">^^</span><span class="n">xsd</span><span class="p">:</span><span class="n">date</span><span class="o">.</span>
+  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">/</span><span class="n">my</span><span class="o">-</span><span class="n">database</span><span class="o">&gt;</span> <span class="n">foaf</span><span class="p">:</span><span class="n">generatorAgent</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">converter</span><span class="o">/</span><span class="mf">0.0.5</span><span class="o">&gt;.</span>
+<span class="p">}</span>
+<span class="o">...</span><span class="n">other</span> <span class="n">named</span> <span class="n">graphs</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 <p>Using a pair of named graphs per source can quickly lead to a very
@@ -592,23 +666,23 @@ source graphs and their metadata.</p>
 <p>Care should be taken when choosing graph URIs. If an application
 uses the source document URL of some RDF as the named graph URI
 then this can lead to confusing statements as illustrated below:</p>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>@prefix ex: &lt;http://www.example.org/&gt; .
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="nd">@prefix</span> <span class="n">ex</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/&gt;</span> <span class="o">.</span>
 
-#Named graph containing results of HTTP crawl
-&lt;http://example.org/person/joe.rdf&gt; {
-  #statements contained in the document, about itself
-  &lt;http://example.org/person/joe.rdf&gt; foaf:primaryTopic &lt;http://example.org/person/joe&gt;.
-  #date the FOAF document was created
-  &lt;http://example.org/person/joe.rdf&gt; dct:created &quot;2010-06-01&quot;.
+<span class="c1">#Named graph containing results of HTTP crawl</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">person</span><span class="o">/</span><span class="n">joe</span><span class="o">.</span><span class="n">rdf</span><span class="o">&gt;</span> <span class="p">{</span>
+  <span class="c1">#statements contained in the document, about itself</span>
+  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">person</span><span class="o">/</span><span class="n">joe</span><span class="o">.</span><span class="n">rdf</span><span class="o">&gt;</span> <span class="n">foaf</span><span class="p">:</span><span class="n">primaryTopic</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">person</span><span class="o">/</span><span class="n">joe</span><span class="o">&gt;.</span>
+  <span class="c1">#date the FOAF document was created</span>
+  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">person</span><span class="o">/</span><span class="n">joe</span><span class="o">.</span><span class="n">rdf</span><span class="o">&gt;</span> <span class="n">dct</span><span class="p">:</span><span class="n">created</span> <span class="s2">&quot;2010-06-01&quot;</span><span class="o">.</span>
 
-  &lt;http://example.org/person/joe&gt; foaf:name &quot;Joe Bloggs&quot;.
-}
+  <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">person</span><span class="o">/</span><span class="n">joe</span><span class="o">&gt;</span> <span class="n">foaf</span><span class="p">:</span><span class="n">name</span> <span class="s2">&quot;Joe Bloggs&quot;</span><span class="o">.</span>
+<span class="p">}</span>
 
-#Metadata graph, describing results of crawl
-&lt;http://app.example.org/graphs/&gt; {
-    #date the named graph was created
-    &lt;http://example.org/person/joe.rdf&gt; dct:created &quot;2012-05-28&quot;.
-}
+<span class="c1">#Metadata graph, describing results of crawl</span>
+<span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">app</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">graphs</span><span class="o">/&gt;</span> <span class="p">{</span>
+   <span class="c1">#date the named graph was created</span>
+   <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">person</span><span class="o">/</span><span class="n">joe</span><span class="o">.</span><span class="n">rdf</span><span class="o">&gt;</span> <span class="n">dct</span><span class="p">:</span><span class="n">created</span> <span class="s2">&quot;2012-05-28&quot;</span><span class="o">.</span>
+<span class="p">}</span>
 </code></pre></div>
 </div>
 <p>In the above example there are two <code class="docutils literal notranslate"><span class="pre">dct:created</span></code> properties
@@ -617,12 +691,12 @@ associated with the resource
 description which describes its primary topic and the date it was
 generated. The second date was added by a hypothetical web crawler
 that captured the date it stored that information in a named
-graph. It is possible for a SPARQL query applied to the <a class="reference external" href="union-graph.html">union
-graph</a> for this dataset to return conflicting
+graph. It is possible for a SPARQL query applied to the <a class="reference internal" href="union-graph.html#union-graph"><span class="std std-ref">union graph</span></a>
+for this dataset to return conflicting
 information, suggesting that the use of the source URL as a graph
 identifier is a poor choice. A better alternative would be to add
 some indirection:</p>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>@prefix ex: &lt;http://www.example.org/&gt; .
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code>@prefix ex: &lt;http://www.example.org/&gt; .
 
 #Named graph containing results of HTTP crawl
 &lt;http://app.example.org/graphs?source=http://example.org/person/joe.rdf&gt; {
@@ -636,10 +710,10 @@ some indirection:</p>
 
 #Metadata graph, describing results of crawl
 &lt;http://app.example.org/graphs&gt; {
-    #date the named graph was created
-    &lt;http://app.example.org/graphs?source=http://example.org/person/joe.rdf&gt; dct:created &quot;2012-05-28&quot;.
-    #source of the graph
-    &lt;http://app.example.org/graphs?source=http://example.org/person/joe.rdf&gt; dct:source &lt;http://example.org/person/joe.rdf&gt;.
+   #date the named graph was created
+   &lt;http://app.example.org/graphs?source=http://example.org/person/joe.rdf&gt; dct:created &quot;2012-05-28&quot;.
+   #source of the graph
+   &lt;http://app.example.org/graphs?source=http://example.org/person/joe.rdf&gt; dct:source &lt;http://example.org/person/joe.rdf&gt;.
 }
 </code></pre></div>
 </div>
@@ -647,59 +721,19 @@ some indirection:</p>
 the web crawl. The web crawler then uses this URI to record the
 required metadata. By adding an <code class="docutils literal notranslate"><span class="pre">dct:source</span></code> property (or
 similar) it is still possible to identify which named graph was
-derived from which source URL. As can be seen a <a class="reference external" href="patterned-uris.html">Patterned
-URI</a> is used to generate the graph
+derived from which source URL. As can be seen a
+<a class="reference internal" href="../chapter_2/patterned-uris.html#patterned-uris"><span class="std std-ref">Patterned URI</span></a> is used to generate the graph
 identifier, giving a predictable structure to the store.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="related">Related</p>
-</div>
-</div>
-</div>
-<div class="itemizedlist docutils container">
+<h2 id="related"><span class="section-number">5.1.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="named-graphs.html">Named Graph</a></p></li>
-<li><p><a class="reference external" href="graph-per-resource.html">Graph Per Resource</a></p></li>
-<li><p><a class="reference external" href="graph-per-source.html">Graph Per Source</a></p></li>
+<li><p><a class="reference internal" href="named-graphs.html#named-graphs"><span class="std std-ref">Named Graph</span></a></p></li>
+<li><p><a class="reference internal" href="graph-per-resource.html#graph-per-resource"><span class="std std-ref">Graph Per Resource</span></a></p></li>
+<li><p><a class="reference internal" href="graph-per-source.html#graph-per-source"><span class="std std-ref">Graph Per Source</span></a></p></li>
 </ul>
-</div>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="further-reading">Further Reading</p>
-</div>
-</div>
-</div>
-<div class="itemizedlist docutils container">
+<h2 id="further-reading"><span class="section-number">5.1.6. </span>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="#">Named Graph (Wikipedia)</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Named_graph">Named Graph (Wikipedia)</a></p></li>
 </ul>
-</div>
-</div>
-</div></blockquote>
-<div class="navfooter docutils container">
-<table class="docutils data align-default">
-<tbody>
-<tr class="row-odd"><td><p>`
-Prev &lt;data-managemen
-t-patterns.html&gt;`__</p></td>
-<td><p><a class="reference external" href="data-management-patterns.html">Up</a></p></td>
-<td><p> <a class="reference external" href="graph-per-aspect.html">Next</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Chapter 5. Data
-Management Patterns</p></td>
-<td><p><a class="reference external" href="index-2.html">Ho
-me</a></p></td>
-<td><p>Graph Per Aspect</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 
 
 
@@ -720,7 +754,7 @@ me</a></p></td>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Data Management Patterns" rel="prev">
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5. Data Management Patterns" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -729,20 +763,20 @@ me</a></p></td>
               <span class="md-footer__direction">
                 Previous
               </span>
-              1. Data Management Patterns
+              5. Data Management Patterns
             </div>
           </div>
         </a>
       
       
         
-        <a href="graph-per-aspect.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1.2. Graph Per Aspect" rel="next">
+        <a href="graph-per-aspect.html" class="md-footer__link md-footer__link--next" aria-label="Next: 5.2. Graph Per Aspect" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              1.2. Graph Per Aspect
+              5.2. Graph Per Aspect
             </div>
           </div>
           <div class="md-footer__button md-icon">

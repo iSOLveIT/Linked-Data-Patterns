@@ -13,7 +13,7 @@
     
     
       
-        <title>7. Equivalence Links - Linked Data Patterns</title>
+        <title>4.7. Equivalence Links - Linked Data Patterns</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#context" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7. Equivalence Links
+              4.7. Equivalence Links
             
           </span>
         </div>
@@ -391,9 +396,66 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span title="chapters/chapter_4/equivalence-links (document)" class="md-ellipsis">Equivalence Links</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="" class="md-nav__link md-nav__link--active">
         <span title="chapters/chapter_4/equivalence-links (document)" class="md-ellipsis">Equivalence Links</span>
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_4/equivalence-links (document)" class="md-ellipsis">Equivalence Links</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -533,8 +595,53 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--secondary">
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      <span title="chapters/chapter_4/equivalence-links (document)" class="md-ellipsis">Equivalence Links</span>
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">Context</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">Solution</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-s" class="md-nav__link">
+    <span class="md-ellipsis">Example<wbr>(s)</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">Discussion</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related" class="md-nav__link">
+    <span class="md-ellipsis">Related</span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -551,75 +658,32 @@
 
 
 
-  <h1 id="equivalence-links"><span id="id1"></span><span class="section-number">7. </span>Equivalence Links<a class="headerlink" href="#equivalence-links" title="Permalink to this heading">¶</a></h1>
-<blockquote>
-<div><blockquote>
-<div><dl class="field-list simple">
-<dt class="field-odd">name<span class="colon">:</span></dt>
-<dd class="field-odd"><p>equivalence-links</p>
-</dd>
-<dt class="field-even">class<span class="colon">:</span></dt>
-<dd class="field-even"><p>title</p>
-</dd>
-</dl>
-</div></blockquote>
-<p><em>How do we indicate that different URIs refer to the same resource or
-concept?</em></p>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="context">Context</p>
-</div>
-</div>
-</div>
+  <h1 id="equivalence-links"><span id="id1"></span><span class="section-number">4.7. </span>Equivalence Links<a class="headerlink" href="#equivalence-links" title="Permalink to this heading">¶</a></h1>
+<p><em>How do we indicate that different URIs refer to the same resource or concept?</em></p>
+<h2 id="context"><span class="section-number">4.7.1. </span>Context<a class="headerlink" href="#context" title="Permalink to this heading">¶</a></h2>
 <p>Linked Data is published in a de-centralised way with multiple
 people and organisations collectively publishing data about the
 same resources. While it is a goal to reuse identifiers wherever
 possible this may not always be achievable. If data has been
 published in this way, how can links be built between datasets in
 order to identify that distinct URIs refer to the same resource?</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="solution">Solution</p>
-</div>
-</div>
-</div>
+<h2 id="solution"><span class="section-number">4.7.2. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">¶</a></h2>
 <p>Use <code class="docutils literal notranslate"><span class="pre">owl:sameAs</span></code>, <code class="docutils literal notranslate"><span class="pre">skos:exactMatch</span></code>, or similar specialised
 relation, to indicate that two URIs are equivalent.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="examples">Example(s)</p>
-</div>
-</div>
-</div>
-<div class="highlight-programlisting notranslate"><div class="highlight"><pre><span></span><code>#Statement from Data Set 1
-ex:bob a foaf:Person.
+<h2 id="example-s"><span class="section-number">4.7.3. </span>Example(s)<a class="headerlink" href="#example-s" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><code><span class="c1">#Statement from Data Set 1</span>
+<span class="n">ex</span><span class="p">:</span><span class="n">bob</span> <span class="n">a</span> <span class="n">foaf</span><span class="p">:</span><span class="n">Person</span><span class="o">.</span>
 
-#Statement from Data Set 2, with equivalence
-ex:otherBob a foaf:Person.
-ex:otherBob owl:sameAs ex:bob.
+<span class="c1">#Statement from Data Set 2, with equivalence</span>
+<span class="n">ex</span><span class="p">:</span><span class="n">otherBob</span> <span class="n">a</span> <span class="n">foaf</span><span class="p">:</span><span class="n">Person</span><span class="o">.</span>
+<span class="n">ex</span><span class="p">:</span><span class="n">otherBob</span> <span class="n">owl</span><span class="p">:</span><span class="n">sameAs</span> <span class="n">ex</span><span class="p">:</span><span class="n">bob</span><span class="o">.</span>
 </code></pre></div>
 </div>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="discussion">Discussion</p>
-</div>
-</div>
-</div>
+<h2 id="discussion"><span class="section-number">4.7.4. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">¶</a></h2>
 <p>Distributed publishing is a fact of life on the web. Semantic web
 technologies have built-in support for handling distributed
 publishing of both data and schemas by standardising specific
-relations for bringing together disparate datasources. The most
+relations for bringing together disparate datasource’s. The most
 important of these facilities is the <code class="docutils literal notranslate"><span class="pre">owl:sameAs</span></code> relation,
 which indicates that two URIs are equivalent. According to the
 semantics defined in the OWL standard, the two URIs are synonyms
@@ -647,38 +711,11 @@ for relating together classes (<code class="docutils literal notranslate"><span 
 properties (<code class="docutils literal notranslate"><span class="pre">owl:equivalentProperty</span></code>). These should be used
 instead of <code class="docutils literal notranslate"><span class="pre">owl:sameAs</span></code> when relating together terms in an
 ontology.</p>
-</div>
-<div class="sect2 docutils container">
-<div class="titlepage docutils container">
-<div class="docutils container">
-<div class="docutils container">
-<p class="title rubric" id="related">Related</p>
-</div>
-</div>
-</div>
-<div class="itemizedlist docutils container">
+<h2 id="related"><span class="section-number">4.7.5. </span>Related<a class="headerlink" href="#related" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="proxy-uris.html">Proxy URIs</a></p></li>
-<li><p><a class="reference external" href="link-base.html">Link Base</a></p></li>
+<li><p><a class="reference internal" href="../chapter_2/proxy-uris.html#proxy-uris"><span class="std std-ref">Proxy URIs</span></a></p></li>
+<li><p><a class="reference internal" href="link-base.html#link-base"><span class="std std-ref">Link Base</span></a></p></li>
 </ul>
-</div>
-</div>
-</div></blockquote>
-<div class="navfooter docutils container">
-<table class="docutils data align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference external" href="embedded-metadata.html">Prev</a></p></td>
-<td><p><a class="reference external" href="publishing-patterns.html">Up</a></p></td>
-<td><p><a class="reference external" href="link-base.html">Next</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Embedded Metadata</p></td>
-<td><p><a class="reference external" href="index-2.html">Ho
-me</a></p></td>
-<td><p>Link Base</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 
 
 
@@ -699,7 +736,7 @@ me</a></p></td>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="embedded-metadata.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 6. Embedded Metadata" rel="prev">
+        <a href="embedded-metadata.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4.6. Embedded Metadata" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -708,20 +745,20 @@ me</a></p></td>
               <span class="md-footer__direction">
                 Previous
               </span>
-              6. Embedded Metadata
+              4.6. Embedded Metadata
             </div>
           </div>
         </a>
       
       
         
-        <a href="link-base.html" class="md-footer__link md-footer__link--next" aria-label="Next: 8. Link Base" rel="next">
+        <a href="link-base.html" class="md-footer__link md-footer__link--next" aria-label="Next: 4.8. Link Base" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              8. Link Base
+              4.8. Link Base
             </div>
           </div>
           <div class="md-footer__button md-icon">
