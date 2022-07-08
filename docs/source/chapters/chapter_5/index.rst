@@ -24,8 +24,7 @@ One reason for partitioning of the graph, is to support
 data extraction. Creating a useful view over one or more
 resources in a graph, e.g. to drive a user interface.
 There are a number of different partitioning mechanisms
-that can be used and these are covered in the `Bounded
-Description <bounded-description.html>`__ pattern
+that can be used and these are covered in the :ref:`Bounded-Description <bounded-description>` pattern
 described in the next chapter.
 
 A very important reason for wanting to partition a graph
@@ -39,8 +38,7 @@ be manipulated more easily.
 The means by which this affordance is created is by
 extending the core triple model of RDF to include an
 extra identifier. This allows us to identify collections
-of RDF triples, known as `Named
-Graphs <named-graphs.html>`__. The patterns captured in
+of RDF triples, known as :ref:`Named Graphs <named-graphs>`. The patterns captured in
 this chapter describe different approaches for managing
 RDF data using Named Graphs. The patterns cover different
 approaches for deciding on the scope of individual

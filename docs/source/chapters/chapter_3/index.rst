@@ -68,8 +68,7 @@ alone shouldn't guide our modelling.
 This is not the same as saying that all modelling must be
 done up front. Modelling for Linked Data can be agile and
 iterative. We should just take care to think about the
-likely areas of extension, as the `Link Not
-Label <link-not-label.html>`__ pattern illustrates.
+likely areas of extension, as the :ref:`Link Not Label <link-not-label>` pattern illustrates.
 
 Thirdly, and finally, the other important way in which
 RDF modelling differs from other approaches is that there
@@ -91,8 +90,8 @@ This chapter introduces a number of RDF modelling
 patterns that are useful in a variety of different use
 cases. Several of the patterns are really illustrations
 of how to use particular features of RDF, e.g. annotation
-of literals with `data types <typed-literal.html>`__ or
-`languages <multi-lingual-literal.html>`__. We've
+of literals with :ref:`data types <typed-literal>` or
+:ref:`languages <multi-lingual-literal>`. We've
 included these within the overall patterns collection as
 we feel that presenting them as solutions to specific
 questions, e.g. "How can internationalized text be
